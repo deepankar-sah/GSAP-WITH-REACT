@@ -3,6 +3,7 @@ import gsap from "gsap";
 import BasicTweenAnimations from "./components/BasicTweenAnimations";
 import StaggersAnimations from "./components/StaggersAnimations";
 import InteractiveButton from "./projects/InteractiveButtons";
+import PageLoadAnimation from "./projects/PageLoadAnimations";
 
 gsap.registerPlugin(useGSAP);
 
@@ -11,7 +12,8 @@ const App = () => {
     <main>
       {/* <BasicTweenAnimations /> */}
       {/* <StaggersAnimations /> */}
-      <InteractiveButton />
+      {/* <InteractiveButton /> */}
+      <PageLoadAnimation />
     </main>
   );
 };
