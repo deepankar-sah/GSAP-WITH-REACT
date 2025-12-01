@@ -10,6 +10,11 @@ const BasicTweenAnimations = () => {
       y: 100,
       duration: 2,
       delay: 1,
+      borderRadius: 50,
+      rotate: 360,
+      repeat: -1,
+      yoyo: true,
+      ease: "power1.inOut",
     });
 
     return () => {
