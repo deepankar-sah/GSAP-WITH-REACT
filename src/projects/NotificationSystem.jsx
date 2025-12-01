@@ -4,14 +4,21 @@ import gsap from "gsap";
 const NotificationSystem = () => {
   const notificaionRef = useRef([]);
 
+  const notificationLoadTimeline = gsap.timeline({
+    defaults: {
+      ease: "power1.in",
+      duration: 0.3,
+    },
+  });
+
   useEffect(() => {
-    gsap.from(notificaionRef.current, {
+    notificationLoadTimeline.from(notificaionRef.current, {
       x: 100,
       opacity: 0,
       duration: 0.3,
       delay: 0.5,
     });
-    gsap.to(notificaionRef.current, {
+    notificationLoadTimeline.to(notificaionRef.current, {
       x: 100,
       opacity: 0,
       duration: 0.3,
