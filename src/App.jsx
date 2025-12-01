@@ -4,6 +4,7 @@ import BasicTweenAnimations from "./components/BasicTweenAnimations";
 import StaggersAnimations from "./components/StaggersAnimations";
 import InteractiveButton from "./projects/InteractiveButtons";
 import PageLoadAnimation from "./projects/PageLoadAnimations";
+import LoadingSpin from "./projects/LoadingSpin";
 
 gsap.registerPlugin(useGSAP);
 
@@ -13,7 +14,8 @@ const App = () => {
       {/* <BasicTweenAnimations /> */}
       {/* <StaggersAnimations /> */}
       {/* <InteractiveButton /> */}
-      <PageLoadAnimation />
+      {/* <PageLoadAnimation /> */}
+      <LoadingSpin />
     </main>
   );
 };
